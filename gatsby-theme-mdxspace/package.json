@@ -1,0 +1,13 @@
+{
+  "name": "gatsby-theme-mdxspace",
+  "version": "0.0.1",
+  "author": "Jon Gold <gold@cosmiccomputation.org",
+  "dependencies": {
+    "gatsby-plugin-theme-ui": "^0.3.0",
+    "react-feather": "^2.0.4",
+    "theme-ui": "^0.3.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.20.18"
+  }
+}
