@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: ["gatsby-plugin-theme-ui"],
+  plugins: [`gatsby-theme-mdxspace-core`, `gatsby-plugin-theme-ui`],
 };

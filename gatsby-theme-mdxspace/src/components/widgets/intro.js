@@ -17,10 +17,10 @@ export const Intro = ({
     <Heading sx={{ fontSize: 3, mb: 2 }}>{name}</Heading>
     <Box sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }}>
       <Box sx={{ mr: 2 }}>
-        <Img
+        {/* <Img
           {...profilePhoto.childImageSharp}
           alt={`${name}’s profile photo`}
-        />
+        /> */}
       </Box>
       <Box>
         <p sx={{ variant: "styles.p" }}>"{tagline}"</p>

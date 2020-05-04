@@ -1,9 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "develop": "yarn workspace example develop"
+    "develop": "yarn workspace example gatsby clean && yarn workspace example develop"
   },
   "workspaces": [
+    "gatsby-theme-mdxspace-core",
     "gatsby-theme-mdxspace",
     "example"
   ]

@@ -13,12 +13,14 @@ import { TopFriends } from "./widgets/top-friends";
 import { Wall } from "./widgets/wall";
 
 export const Profile = ({
-  userInfo,
-  interests,
-  details,
-  posts,
-  friends,
-  comments,
+  profile: {
+    info,
+    interests,
+    details,
+    posts = [],
+    friends = [],
+    comments = [],
+  },
 }) => (
   <div
     sx={{
@@ -31,18 +33,18 @@ export const Profile = ({
     }}
   >
     <div>
-      <Intro {...userInfo} />
-      <Contact name={userInfo.name} />
+      <Intro {...info} />
+      <Contact name={info.name} />
       {/* <MusicPlayer /> */}
-      <Interests name={userInfo.name} {...interests} />
-      <Details name={userInfo.name} {...details} />
+      <Interests name={info.name} {...interests} />
+      <Details name={info.name} {...details} />
     </div>
     <div>
-      <Banner name={userInfo.name} />
-      <Blog name={userInfo.name} posts={posts} />
-      <Blurbs name={userInfo.name} />
-      <TopFriends name={userInfo.name} {...friends} />
-      <Wall name={userInfo.name} {...comments} />
+      <Banner name={info.name} />
+      {/* <Blog name={info.name} posts={posts} /> */}
+      <Blurbs name={info.name} />
+      {/* <TopFriends name={info.name} {...friends} />
+      <Wall name={info.name} {...comments} /> */}
     </div>
   </div>
 );

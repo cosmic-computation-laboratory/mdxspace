@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "author": "Jon Gold <gold@cosmiccomputation.org",
+  "scripts": {
+    "develop": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^2.18.21",
+    "gatsby-theme-mdxspace": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
